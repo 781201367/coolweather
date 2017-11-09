@@ -19,7 +19,7 @@ public class City extends DataSupport {
         this.id = id;
     }
 
-    public int getCityCodeCode(){
+    public int getCityCode(){
         return cityCode;
     }
 
@@ -27,7 +27,7 @@ public class City extends DataSupport {
         this.cityCode = cityCode;
     }
 
-    public String setCityName(){
+    public String getCityName(){
         return cityName;
     }
 
