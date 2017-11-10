@@ -14,14 +14,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         if (prefs.getString("weather", null) != null){
-            SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(MainActivity.this)
-                    .edit();
-            //放入数据
-            editor.clear();
-            editor.apply();
-            //Intent intent = new Intent(this, WeatherActivity.class);
-            //startActivity(intent);
-            //finish();
+
+            Intent intent = new Intent(this, WeatherActivity.class);
+            startActivity(intent);
+            finish();
         }
     }
 }
